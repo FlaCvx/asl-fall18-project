@@ -1,0 +1,61 @@
+/home/foraslvms/memtier_benchmark-master/memtier_benchmark --port=11212 --protocol=memcache_text --expiry-range=9999-10000 -d 4096 --key-maximum=10000 --hide-histogram --server=10.0.0.8 --test-time=20 --clients=100 --threads=2 --ratio=1:0
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+[RUN #1 5%,   0 secs]  2 threads:        4301 ops,    4372 (avg:    4372) ops/sec, 17.25MB/sec (avg: 17.25MB/sec), 22.95 (avg: 22.95) msec latency[RUN #1 10%,   1 secs]  2 threads:        8234 ops,    3932 (avg:    4150) ops/sec, 15.51MB/sec (avg: 16.37MB/sec), 25.28 (avg: 24.06) msec latency[RUN #1 15%,   2 secs]  2 threads:       11801 ops,    3566 (avg:    3954) ops/sec, 14.07MB/sec (avg: 15.60MB/sec), 39.69 (avg: 28.79) msec latency[RUN #1 20%,   3 secs]  2 threads:       15869 ops,    4067 (avg:    3982) ops/sec, 16.05MB/sec (avg: 15.71MB/sec), 56.01 (avg: 35.76) msec latency[RUN #1 25%,   4 secs]  2 threads:       20109 ops,    4238 (avg:    4034) ops/sec, 16.72MB/sec (avg: 15.91MB/sec), 47.67 (avg: 38.28) msec latency[RUN #1 30%,   5 secs]  2 threads:       24179 ops,    4069 (avg:    4040) ops/sec, 16.05MB/sec (avg: 15.94MB/sec), 40.91 (avg: 38.72) msec latency[RUN #1 35%,   6 secs]  2 threads:       28543 ops,    4363 (avg:    4086) ops/sec, 17.21MB/sec (avg: 16.12MB/sec), 36.31 (avg: 38.35) msec latency[RUN #1 40%,   7 secs]  2 threads:       32807 ops,    4263 (avg:    4108) ops/sec, 16.82MB/sec (avg: 16.21MB/sec), 36.88 (avg: 38.16) msec latency[RUN #1 45%,   8 secs]  2 threads:       37128 ops,    4320 (avg:    4132) ops/sec, 17.04MB/sec (avg: 16.30MB/sec), 36.05 (avg: 37.91) msec latency[RUN #1 50%,   9 secs]  2 threads:       41325 ops,    4196 (avg:    4138) ops/sec, 16.55MB/sec (avg: 16.33MB/sec), 37.25 (avg: 37.85) msec latency[RUN #1 55%,  10 secs]  2 threads:       45785 ops,    4459 (avg:    4167) ops/sec, 17.59MB/sec (avg: 16.44MB/sec), 35.54 (avg: 37.62) msec latency[RUN #1 60%,  11 secs]  2 threads:       49235 ops,    3449 (avg:    4107) ops/sec, 13.61MB/sec (avg: 16.20MB/sec), 44.23 (avg: 38.08) msec latency[RUN #1 65%,  12 secs]  2 threads:       52688 ops,    3452 (avg:    4057) ops/sec, 13.62MB/sec (avg: 16.01MB/sec), 46.64 (avg: 38.64) msec latency[RUN #1 70%,  13 secs]  2 threads:       56009 ops,    3320 (avg:    4004) ops/sec, 13.10MB/sec (avg: 15.80MB/sec), 46.89 (avg: 39.13) msec latency[RUN #1 75%,  14 secs]  2 threads:       59419 ops,    3409 (avg:    3964) ops/sec, 13.45MB/sec (avg: 15.64MB/sec), 46.28 (avg: 39.54) msec latency[RUN #1 80%,  15 secs]  2 threads:       62894 ops,    3474 (avg:    3934) ops/sec, 13.71MB/sec (avg: 15.52MB/sec), 45.33 (avg: 39.86) msec latency[RUN #1 85%,  16 secs]  2 threads:       66483 ops,    3588 (avg:    3913) ops/sec, 14.15MB/sec (avg: 15.44MB/sec), 43.28 (avg: 40.05) msec latency[RUN #1 90%,  17 secs]  2 threads:       69931 ops,    3447 (avg:    3887) ops/sec, 13.60MB/sec (avg: 15.34MB/sec), 45.35 (avg: 40.31) msec latency[RUN #1 95%,  18 secs]  2 threads:       73578 ops,    3646 (avg:    3875) ops/sec, 14.38MB/sec (avg: 15.29MB/sec), 42.97 (avg: 40.44) msec latency[RUN #1 100%,  19 secs]  2 threads:       77094 ops,    3515 (avg:    3857) ops/sec, 13.87MB/sec (avg: 15.22MB/sec), 45.49 (avg: 40.67) msec latency[RUN #1 101%,  20 secs]  0 threads:       77304 ops,    3515 (avg:    3822) ops/sec, 13.87MB/sec (avg: 15.08MB/sec), 45.49 (avg: 40.65) msec latency
+
+2         Threads
+100       Connections per thread
+20        Seconds
+
+
+ALL STATS
+========================================================================
+Type        Ops/sec     Hits/sec   Misses/sec      Latency       KB/sec 
+------------------------------------------------------------------------
+Sets           0.00          ---          ---     40.64800         0.00 
+Gets           0.00         0.00         0.00      0.00000         0.00 
+Waits          0.00          ---          ---      0.00000          --- 
+Totals         0.00         0.00         0.00     40.64800         0.00 

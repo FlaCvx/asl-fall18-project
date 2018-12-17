@@ -1,0 +1,180 @@
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try1.log | grep "ParseTime(msec):" > ./8_threads/ParseTime_E31ROMidd1_T8_try1
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try2.log | grep "ParseTime(msec):" > ./8_threads/ParseTime_E31ROMidd1_T8_try2
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try3.log | grep "ParseTime(msec):" > ./8_threads/ParseTime_E31ROMidd1_T8_try3
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try1.log | grep "ParseTime(msec):" > ./16_threads/ParseTime_E31ROMidd1_T16_try1
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try2.log | grep "ParseTime(msec):" > ./16_threads/ParseTime_E31ROMidd1_T16_try2
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try3.log | grep "ParseTime(msec):" > ./16_threads/ParseTime_E31ROMidd1_T16_try3
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try1.log | grep "ParseTime(msec):" > ./32_threads/ParseTime_E31ROMidd1_T32_try1
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try2.log | grep "ParseTime(msec):" > ./32_threads/ParseTime_E31ROMidd1_T32_try2
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try3.log | grep "ParseTime(msec):" > ./32_threads/ParseTime_E31ROMidd1_T32_try3
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try1.log | grep "ParseTime(msec):" > ./64_threads/ParseTime_E31ROMidd1_T64_try1
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try2.log | grep "ParseTime(msec):" > ./64_threads/ParseTime_E31ROMidd1_T64_try2
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try3.log | grep "ParseTime(msec):" > ./64_threads/ParseTime_E31ROMidd1_T64_try3
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try1.log | grep "QueueLength:" > ./8_threads/QueueLength_E31ROMidd1_T8_try1
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try2.log | grep "QueueLength:" > ./8_threads/QueueLength_E31ROMidd1_T8_try2
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try3.log | grep "QueueLength:" > ./8_threads/QueueLength_E31ROMidd1_T8_try3
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try1.log | grep "QueueLength:" > ./16_threads/QueueLength_E31ROMidd1_T16_try1
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try2.log | grep "QueueLength:" > ./16_threads/QueueLength_E31ROMidd1_T16_try2
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try3.log | grep "QueueLength:" > ./16_threads/QueueLength_E31ROMidd1_T16_try3
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try1.log | grep "QueueLength:" > ./32_threads/QueueLength_E31ROMidd1_T32_try1
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try2.log | grep "QueueLength:" > ./32_threads/QueueLength_E31ROMidd1_T32_try2
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try3.log | grep "QueueLength:" > ./32_threads/QueueLength_E31ROMidd1_T32_try3
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try1.log | grep "QueueLength:" > ./64_threads/QueueLength_E31ROMidd1_T64_try1
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try2.log | grep "QueueLength:" > ./64_threads/QueueLength_E31ROMidd1_T64_try2
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try3.log | grep "QueueLength:" > ./64_threads/QueueLength_E31ROMidd1_T64_try3
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try1.log | grep "ServiceTime(msec):" > ./8_threads/ServiceTime_E31ROMidd1_T8_try1
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try2.log | grep "ServiceTime(msec):" > ./8_threads/ServiceTime_E31ROMidd1_T8_try2
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try3.log | grep "ServiceTime(msec):" > ./8_threads/ServiceTime_E31ROMidd1_T8_try3
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try1.log | grep "ServiceTime(msec):" > ./16_threads/ServiceTime_E31ROMidd1_T16_try1
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try2.log | grep "ServiceTime(msec):" > ./16_threads/ServiceTime_E31ROMidd1_T16_try2
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try3.log | grep "ServiceTime(msec):" > ./16_threads/ServiceTime_E31ROMidd1_T16_try3
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try1.log | grep "ServiceTime(msec):" > ./32_threads/ServiceTime_E31ROMidd1_T32_try1
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try2.log | grep "ServiceTime(msec):" > ./32_threads/ServiceTime_E31ROMidd1_T32_try2
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try3.log | grep "ServiceTime(msec):" > ./32_threads/ServiceTime_E31ROMidd1_T32_try3
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try1.log | grep "ServiceTime(msec):" > ./64_threads/ServiceTime_E31ROMidd1_T64_try1
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try2.log | grep "ServiceTime(msec):" > ./64_threads/ServiceTime_E31ROMidd1_T64_try2
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try3.log | grep "ServiceTime(msec):" > ./64_threads/ServiceTime_E31ROMidd1_T64_try3
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try1.log | grep "Throughput(ops/sec)" > ./8_threads/THROUGHPUT_E31ROMidd1_T8_try1
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try2.log | grep "Throughput(ops/sec)" > ./8_threads/THROUGHPUT_E31ROMidd1_T8_try2
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try3.log | grep "Throughput(ops/sec)" > ./8_threads/THROUGHPUT_E31ROMidd1_T8_try3
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try1.log | grep "Throughput(ops/sec)" > ./16_threads/THROUGHPUT_E31ROMidd1_T16_try1
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try2.log | grep "Throughput(ops/sec)" > ./16_threads/THROUGHPUT_E31ROMidd1_T16_try2
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try3.log | grep "Throughput(ops/sec)" > ./16_threads/THROUGHPUT_E31ROMidd1_T16_try3
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try1.log | grep "Throughput(ops/sec)" > ./32_threads/THROUGHPUT_E31ROMidd1_T32_try1
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try2.log | grep "Throughput(ops/sec)" > ./32_threads/THROUGHPUT_E31ROMidd1_T32_try2
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try3.log | grep "Throughput(ops/sec)" > ./32_threads/THROUGHPUT_E31ROMidd1_T32_try3
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try1.log | grep "Throughput(ops/sec)" > ./64_threads/THROUGHPUT_E31ROMidd1_T64_try1
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try2.log | grep "Throughput(ops/sec)" > ./64_threads/THROUGHPUT_E31ROMidd1_T64_try2
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try3.log | grep "Throughput(ops/sec)" > ./64_threads/THROUGHPUT_E31ROMidd1_T64_try3
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try1.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try1.log | grep "WaitingTime(msec)" > ./8_threads/WaitingTime_E31ROMidd1_T8_try1
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try2.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try2.log | grep "WaitingTime(msec)" > ./8_threads/WaitingTime_E31ROMidd1_T8_try2
+
+
+cat ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C1_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C8_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C16_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C22_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C28_try3.log ./8_threads/12_01_2018_19:13:12E31ROMidd1_T8_C32_try3.log | grep "WaitingTime(msec)" > ./8_threads/WaitingTime_E31ROMidd1_T8_try3
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try1.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try1.log | grep "WaitingTime(msec)" > ./16_threads/WaitingTime_E31ROMidd1_T16_try1
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try2.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try2.log | grep "WaitingTime(msec)" > ./16_threads/WaitingTime_E31ROMidd1_T16_try2
+
+
+cat ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C1_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C8_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C16_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C22_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C28_try3.log ./16_threads/12_01_2018_19:13:12E31ROMidd1_T16_C32_try3.log | grep "WaitingTime(msec)" > ./16_threads/WaitingTime_E31ROMidd1_T16_try3
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try1.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try1.log | grep "WaitingTime(msec)" > ./32_threads/WaitingTime_E31ROMidd1_T32_try1
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try2.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try2.log | grep "WaitingTime(msec)" > ./32_threads/WaitingTime_E31ROMidd1_T32_try2
+
+
+cat ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C1_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C8_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C16_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C22_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C28_try3.log ./32_threads/12_01_2018_19:13:12E31ROMidd1_T32_C32_try3.log | grep "WaitingTime(msec)" > ./32_threads/WaitingTime_E31ROMidd1_T32_try3
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try1.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try1.log | grep "WaitingTime(msec)" > ./64_threads/WaitingTime_E31ROMidd1_T64_try1
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try2.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try2.log | grep "WaitingTime(msec)" > ./64_threads/WaitingTime_E31ROMidd1_T64_try2
+
+
+cat ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C1_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C8_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C16_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C22_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C28_try3.log ./64_threads/12_01_2018_19:13:12E31ROMidd1_T64_C32_try3.log | grep "WaitingTime(msec)" > ./64_threads/WaitingTime_E31ROMidd1_T64_try3
+
+

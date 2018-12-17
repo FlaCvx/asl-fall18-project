@@ -1,0 +1,9 @@
+#!/bin/bash
+
+array="${@}"
+
+
+for filename in $array; do
+    echo "$filename"
+    cat "$filename"
+done

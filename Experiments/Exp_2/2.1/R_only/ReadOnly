@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Read ONLY, EXPERIMENT 2.1
+
+clients=(1 8 16 22 28 32 40 50 60 100)
+threads=2
+MODE='R'
+set=0
+get=1
+try=(1 2 3)
+Client1='10.0.0.7'
+Client2='10.0.0.11'
+Client3='10.0.0.5'
+Middle1='10.0.0.6'
+Middle2='10.0.0.4'
+Server1='10.0.0.8'
+Server2='10.0.0.10'
+Server3='10.0.0.9'
+user='foraslvms'
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client1/E21${MODE}OMemtier1dstat " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client2/E21${MODE}OMemtier2dstat " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client3/E21${MODE}OMemtier3dstat " &
+
+
+for c in "${clients[@]}"; do	
+	for p in "${try[@]}"; do
+
+		ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Server1} 20 ${c} $threads $set $get &> /home/${user}/asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client1/E21${MODE}OC1I1_C${c}_try${p}.log " &
+			
+
+		ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Server1} 20 ${c} $threads $set $get &> /home/${user}/asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client2/E21${MODE}OC2I1_C${c}_try${p}.log " &
+			
+
+		ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Server1} 20 ${c} $threads $set $get &> /home/${user}/asl-fall18-project/Experiments/Exp_2/2.1/${MODE}_only/Client3/E21${MODE}OC3I1_C${c}_try${p}.log "
+			
+
+		cmd="sleep 5"
+		echo $cmd
+		$cmd
+	
+	done
+done
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd	
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd

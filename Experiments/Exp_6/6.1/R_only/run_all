@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cmd="./1_1Middleware_1_Server"
+echo $cmd
+$cmd
+
+cmd="./2_1Middleware_3_Server"
+echo $cmd
+$cmd
+
+cmd="./3_2Middleware_1_Server"
+echo $cmd
+$cmd
+
+cmd="./4_2Middleware_3_Server"
+echo $cmd
+$cmd

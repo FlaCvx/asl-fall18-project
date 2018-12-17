@@ -1,0 +1,39 @@
+/home/foraslvms/memtier_benchmark-master/memtier_benchmark --port=11212 --protocol=memcache_text --expiry-range=9999-10000 -d 4096 --key-maximum=10000 --hide-histogram --server=10.0.0.8 --test-time=20 --clients=50 --threads=2 --ratio=1:0
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+read error: Connection reset by peer
+[RUN #1 5%,   0 secs]  2 threads:        5426 ops,    5454 (avg:    5454) ops/sec, 21.52MB/sec (avg: 21.52MB/sec), 17.98 (avg: 17.98) msec latency
+[RUN #1 10%,   1 secs]  2 threads:       10474 ops,    5047 (avg:    5250) ops/sec, 19.91MB/sec (avg: 20.71MB/sec), 19.61 (avg: 18.76) msec latency
+[RUN #1 15%,   2 secs]  2 threads:       15432 ops,    4957 (avg:    5152) ops/sec, 19.56MB/sec (avg: 20.33MB/sec), 20.03 (avg: 19.17) msec latency
+[RUN #1 20%,   3 secs]  2 threads:       21236 ops,    5802 (avg:    5315) ops/sec, 22.89MB/sec (avg: 20.97MB/sec), 17.06 (avg: 18.59) msec latency
+[RUN #1 25%,   4 secs]  2 threads:       27246 ops,    6009 (avg:    5454) ops/sec, 23.70MB/sec (avg: 21.52MB/sec), 16.44 (avg: 18.12) msec latency
+[RUN #1 30%,   5 secs]  2 threads:       33089 ops,    5842 (avg:    5518) ops/sec, 23.05MB/sec (avg: 21.77MB/sec), 16.94 (avg: 17.91) msec latency
+[RUN #1 35%,   6 secs]  2 threads:       39153 ops,    6063 (avg:    5596) ops/sec, 23.92MB/sec (avg: 22.08MB/sec), 16.33 (avg: 17.67) msec latency
+[RUN #1 40%,   7 secs]  2 threads:       44666 ops,    5512 (avg:    5586) ops/sec, 21.74MB/sec (avg: 22.04MB/sec), 17.95 (avg: 17.70) msec latency
+[RUN #1 45%,   8 secs]  2 threads:       50099 ops,    5432 (avg:    5569) ops/sec, 21.43MB/sec (avg: 21.97MB/sec), 18.17 (avg: 17.75) msec latency
+[RUN #1 50%,   9 secs]  2 threads:       55360 ops,    5260 (avg:    5538) ops/sec, 20.75MB/sec (avg: 21.85MB/sec), 18.74 (avg: 17.85) msec latency
+[RUN #1 55%,  10 secs]  2 threads:       60449 ops,    5088 (avg:    5497) ops/sec, 20.07MB/sec (avg: 21.69MB/sec), 19.57 (avg: 17.99) msec latency
+[RUN #1 60%,  11 secs]  2 threads:       65511 ops,    5061 (avg:    5460) ops/sec, 19.97MB/sec (avg: 21.54MB/sec), 19.41 (avg: 18.10) msec latency
+[RUN #1 65%,  12 secs]  2 threads:       70626 ops,    5114 (avg:    5434) ops/sec, 20.18MB/sec (avg: 21.44MB/sec), 19.53 (avg: 18.20) msec latency
+[RUN #1 70%,  13 secs]  2 threads:       75580 ops,    4953 (avg:    5399) ops/sec, 19.54MB/sec (avg: 21.30MB/sec), 19.90 (avg: 18.32) msec latency
+[RUN #1 75%,  14 secs]  2 threads:       80602 ops,    5021 (avg:    5374) ops/sec, 19.81MB/sec (avg: 21.20MB/sec), 19.73 (avg: 18.40) msec latency
+[RUN #1 80%,  15 secs]  2 threads:       85907 ops,    5304 (avg:    5370) ops/sec, 20.92MB/sec (avg: 21.18MB/sec), 18.62 (avg: 18.42) msec latency
+[RUN #1 85%,  16 secs]  2 threads:       91359 ops,    5450 (avg:    5374) ops/sec, 21.50MB/sec (avg: 21.20MB/sec), 18.20 (avg: 18.40) msec latency
+[RUN #1 90%,  17 secs]  2 threads:       96840 ops,    5479 (avg:    5380) ops/sec, 21.62MB/sec (avg: 21.23MB/sec), 17.98 (avg: 18.38) msec latency
+[RUN #1 95%,  18 secs]  2 threads:      102040 ops,    5199 (avg:    5371) ops/sec, 20.51MB/sec (avg: 21.19MB/sec), 19.10 (avg: 18.42) msec latency
+[RUN #1 100%,  19 secs]  2 threads:      107296 ops,    5255 (avg:    5365) ops/sec, 20.73MB/sec (avg: 21.17MB/sec), 18.89 (avg: 18.44) msec latency
+[RUN #1 100%,  20 secs]  0 threads:      107413 ops,    5255 (avg:    5366) ops/sec, 20.73MB/sec (avg: 21.17MB/sec), 18.89 (avg: 18.43) msec latency
+
+2         Threads
+50        Connections per thread
+20        Seconds
+
+
+ALL STATS
+========================================================================
+Type        Ops/sec     Hits/sec   Misses/sec      Latency       KB/sec 
+------------------------------------------------------------------------
+Sets        5366.00          ---          ---     18.43400         0.00 
+Gets           0.00         0.00         0.00      0.00000         0.00 
+Waits          0.00          ---          ---      0.00000          --- 
+Totals      5366.00         0.00         0.00     18.43400         0.00 

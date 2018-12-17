@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+clients=(1 8 16 22 28 32 40 50 60 100)
+middleware_threads=(8 16 32 64)
+try=(1 2 3)
+
+MODE='W'
+E=3
+E_e=3.1
+Ee=31
+
+
+for m_threads in "${middleware_threads[@]}"; do
+	for p in "${try[@]}"; do
+		cmd="cat "
+		for c in "${clients[@]}"; do	
+
+			cmd=" $cmd ./${m_threads}_threads/E${Ee}${MODE}OMidd1_T${m_threads}_C${c}_try${p}.log"
+
+		done
+
+		cmd=" $cmd | grep \"QueueLength:\" "
+		cmd=" $cmd > ./${m_threads}_threads/QueueLength_E${Ee}${MODE}OMidd1_T${m_threads}_try${p}"
+		echo $cmd
+		echo ""
+		echo ""
+
+		#$cmd
+
+	done
+done

@@ -1,0 +1,78 @@
+/home/foraslvms/memtier_benchmark-master/memtier_benchmark --port=11212 --protocol=memcache_text --expiry-range=9999-10000 -d 4096 --key-maximum=10000 --hide-histogram --server=10.0.0.8 --test-time=20 --clients=100 --threads=2 --ratio=1:0
+[RUN #1] Preparing benchmark client...
+[RUN #1] Launching threads now...
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+read error: Connection reset by peer
+[RUN #1 5%,   0 secs]  2 threads:        1968 ops,    1994 (avg:    1994) ops/sec, 7.87MB/sec (avg: 7.87MB/sec), 33.53 (avg: 33.53) msec latency[RUN #1 10%,   1 secs]  2 threads:        4772 ops,    2803 (avg:    2401) ops/sec, 11.06MB/sec (avg: 9.47MB/sec), 47.76 (avg: 41.89) msec latency[RUN #1 15%,   2 secs]  2 threads:        8362 ops,    3589 (avg:    2799) ops/sec, 14.16MB/sec (avg: 11.04MB/sec), 56.97 (avg: 48.37) msec latency[RUN #1 20%,   3 secs]  2 threads:       12256 ops,    3893 (avg:    3073) ops/sec, 15.36MB/sec (avg: 12.13MB/sec), 38.73 (avg: 45.31) msec latency[RUN #1 25%,   4 secs]  2 threads:       16095 ops,    3838 (avg:    3227) ops/sec, 15.14MB/sec (avg: 12.73MB/sec), 36.55 (avg: 43.22) msec latency[RUN #1 30%,   5 secs]  2 threads:       19923 ops,    3817 (avg:    3325) ops/sec, 15.06MB/sec (avg: 13.12MB/sec), 36.72 (avg: 41.97) msec latency[RUN #1 35%,   6 secs]  2 threads:       23726 ops,    3802 (avg:    3394) ops/sec, 15.00MB/sec (avg: 13.39MB/sec), 37.01 (avg: 41.17) msec latency[RUN #1 40%,   7 secs]  2 threads:       27650 ops,    3923 (avg:    3460) ops/sec, 15.48MB/sec (avg: 13.65MB/sec), 35.34 (avg: 40.34) msec latency[RUN #1 45%,   8 secs]  2 threads:       31693 ops,    4042 (avg:    3525) ops/sec, 15.95MB/sec (avg: 13.91MB/sec), 34.77 (avg: 39.63) msec latency[RUN #1 50%,   9 secs]  2 threads:       35756 ops,    4062 (avg:    3578) ops/sec, 16.03MB/sec (avg: 14.12MB/sec), 34.61 (avg: 39.06) msec latency[RUN #1 55%,  10 secs]  2 threads:       39640 ops,    3883 (avg:    3606) ops/sec, 15.32MB/sec (avg: 14.23MB/sec), 35.65 (avg: 38.73) msec latency[RUN #1 60%,  11 secs]  2 threads:       43622 ops,    3980 (avg:    3637) ops/sec, 15.70MB/sec (avg: 14.35MB/sec), 35.28 (avg: 38.41) msec latency[RUN #1 65%,  12 secs]  2 threads:       47755 ops,    4132 (avg:    3675) ops/sec, 16.30MB/sec (avg: 14.50MB/sec), 34.14 (avg: 38.04) msec latency[RUN #1 70%,  13 secs]  2 threads:       52009 ops,    4253 (avg:    3717) ops/sec, 16.78MB/sec (avg: 14.66MB/sec), 32.85 (avg: 37.62) msec latency[RUN #1 75%,  14 secs]  2 threads:       56121 ops,    4111 (avg:    3743) ops/sec, 16.22MB/sec (avg: 14.77MB/sec), 33.88 (avg: 37.34) msec latency[RUN #1 80%,  15 secs]  2 threads:       60106 ops,    3984 (avg:    3758) ops/sec, 15.72MB/sec (avg: 14.83MB/sec), 35.27 (avg: 37.21) msec latency[RUN #1 85%,  16 secs]  2 threads:       63879 ops,    3772 (avg:    3759) ops/sec, 14.88MB/sec (avg: 14.83MB/sec), 37.22 (avg: 37.21) msec latency[RUN #1 90%,  17 secs]  2 threads:       67558 ops,    3678 (avg:    3754) ops/sec, 14.51MB/sec (avg: 14.81MB/sec), 37.86 (avg: 37.24) msec latency[RUN #1 95%,  18 secs]  2 threads:       69386 ops,    1827 (avg:    3653) ops/sec, 7.21MB/sec (avg: 14.41MB/sec), 71.85 (avg: 38.15) msec latency[RUN #1 100%,  19 secs]  2 threads:       71783 ops,    2396 (avg:    3590) ops/sec, 9.45MB/sec (avg: 14.16MB/sec), 57.18 (avg: 38.79) msec latency[RUN #1 103%,  20 secs]  0 threads:       71948 ops,    2396 (avg:    3500) ops/sec, 9.45MB/sec (avg: 13.81MB/sec), 57.18 (avg: 39.63) msec latency
+
+2         Threads
+100       Connections per thread
+20        Seconds
+
+
+ALL STATS
+========================================================================
+Type        Ops/sec     Hits/sec   Misses/sec      Latency       KB/sec 
+------------------------------------------------------------------------
+Sets           0.00          ---          ---     39.62700         0.00 
+Gets           0.00         0.00         0.00      0.00000         0.00 
+Waits          0.00          ---          ---      0.00000          --- 
+Totals         0.00         0.00         0.00     39.62700         0.00 

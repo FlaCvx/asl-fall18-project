@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Read ONLY, EXPERIMENT 2.2
+
+clients=(1 8 16 22 28 32 40 50 60 100 200 300 400)
+threads=1
+MODE='R'
+set=0
+get=1
+try=(1 2 3)
+time=60
+
+Client1='10.0.0.7'
+Client2='10.0.0.11'
+Client3='10.0.0.5'
+Middle1='10.0.0.6'
+Middle2='10.0.0.4'
+Server1='10.0.0.8'
+Server2='10.0.0.10'
+Server3='10.0.0.9'
+user='foraslvms'
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_2/2.2/${MODE}_only/Client1/E22${MODE}OMemtier1dstat " &
+
+
+for c in "${clients[@]}"; do	
+	for p in "${try[@]}"; do
+
+		echo "Running Experiment: E22${MODE}OC1I1_C${c}_try${p}"
+
+		ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Server1} ${time} ${c} $threads $set $get &> /home/${user}/asl-fall18-project/Experiments/Exp_2/2.2/${MODE}_only/Client1/E22${MODE}OC1I1_C${c}_try${p}.log & /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Server2} ${time} ${c} $threads $set $get &> /home/${user}/asl-fall18-project/Experiments/Exp_2/2.2/${MODE}_only/Client1/E22${MODE}OC1I2_C${c}_try${p}.log "
+
+		cmd="sleep 5"
+		echo $cmd
+		$cmd
+	
+	done
+done
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd
+

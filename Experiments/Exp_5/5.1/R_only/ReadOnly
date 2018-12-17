@@ -1,0 +1,125 @@
+#!/bin/bash
+
+# Read ONLY, EXPERIMENT 5.1
+
+clients=(2)
+middleware_threads=(64)
+try=(1 2 3)
+sizes=(3)
+time=60
+threads=1  #memtier threads
+MODE='R'
+set=1
+get=0
+E=5
+E_e=5.1
+Ee=51
+
+now=$(date +"%m_%d_%Y_%H:%M:%S")
+
+Client1='10.0.0.7'
+Client2='10.0.0.11'
+Client3='10.0.0.5'
+Middle1='10.0.0.6'
+Middle2='10.0.0.4'
+Server1='10.0.0.8'
+Server2='10.0.0.10'
+Server3='10.0.0.9'
+
+user='foraslvms'
+
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client1/E${Ee}${MODE}OMemtier1dstat${now} " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client2/E${Ee}${MODE}OMemtier2dstat${now} " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client3/E${Ee}${MODE}OMemtier3dstat${now} " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip4.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Middleware1/E${Ee}${MODE}OMiddleware1dstat${now} " &
+
+ssh ${user}@storesfm3ou7qrpiuisshpublicip5.westeurope.cloudapp.azure.com  "dstat -cdngyt > ./asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Middleware2/E${Ee}${MODE}OMiddleware2dstat${now} " &
+
+
+for m_threads in "${middleware_threads[@]}"; do
+	for c in "${clients[@]}"; do	
+		for size in "${sizes[@]}"; do
+			for p in "${try[@]}"; do
+
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip4.westeurope.cloudapp.azure.com  pkill -2 java   "
+				echo $cmd
+				$cmd
+
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip5.westeurope.cloudapp.azure.com  pkill -2 java   "
+				echo $cmd
+				$cmd
+
+				echo "E${Ee}${MODE}OMidd1_T${m_threads}_C${c}_try${p}_Size${size}.log"
+
+				ssh ${user}@storesfm3ou7qrpiuisshpublicip4.westeurope.cloudapp.azure.com  " cd /home/${user}/asl-fall18-project/Middleware/src/; /usr/lib/jvm/java-8-openjdk-amd64/bin/java RunMW -l ${Middle1} -p 11212 -t ${m_threads} -s true -m ${Server1}:2222 ${Server2}:2222 ${Server3}:2222 &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Middleware1/${m_threads}_threads/${now}E${Ee}${MODE}OMidd1_T${m_threads}_C${c}_try${p}_Size${size}.log " &
+			
+
+				ssh ${user}@storesfm3ou7qrpiuisshpublicip5.westeurope.cloudapp.azure.com  " cd /home/${user}/asl-fall18-project/Middleware/src/; /usr/lib/jvm/java-8-openjdk-amd64/bin/java RunMW -l ${Middle2} -p 11212 -t ${m_threads} -s true -m ${Server1}:2222 ${Server2}:2222 ${Server3}:2222  &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Middleware2/${m_threads}_threads/${now}E${Ee}${MODE}OMidd2_T${m_threads}_C${c}_try${p}_Size${size}.log " &
+
+				cmd="sleep 20"
+				echo $cmd
+				$cmd
+
+				ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle1} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client1/${now}E${Ee}${MODE}OC1I1_T${m_threads}_C${c}_try${p}_Size${size}.log & /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle2} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client1/${now}E${Ee}${MODE}OC1I2_T${m_threads}_C${c}_try${p}_Size${size}.log " &
+			
+
+				ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle1} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client2/${now}E${Ee}${MODE}OC2I1_T${m_threads}_C${c}_try${p}_Size${size}.log &  /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle2} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client2/${now}E${Ee}${MODE}OC2I2_T${m_threads}_C${c}_try${p}_Size${size}.log " &
+			
+
+				ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com  " /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle1} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client3/${now}E${Ee}${MODE}OC3I1_T${m_threads}_C${c}_try${p}_Size${size}.log &  /home/${user}/memtier_benchmark-master/memtier_bash.sh ${Middle2} ${time} ${c} $threads $set $size &> /home/${user}/asl-fall18-project/Experiments/Exp_${E}/${E_e}/${MODE}_only/Client3/${now}E${Ee}${MODE}OC3I2_T${m_threads}_C${c}_try${p}_Size${size}.log "
+			
+		
+
+				cmd="sleep 5"
+				echo $cmd
+				$cmd
+	
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip4.westeurope.cloudapp.azure.com  pkill -2 java   "
+				echo $cmd
+				$cmd
+
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip5.westeurope.cloudapp.azure.com  pkill -2 java   "
+				echo $cmd
+				$cmd
+
+
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com  pkill -2 memtier   "
+				#echo $cmd
+				$cmd
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com  pkill -2 memtier   "
+				#echo $cmd
+				$cmd
+				cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com  pkill -2 memtier   "
+				#echo $cmd
+				$cmd
+
+	
+
+			done
+		done
+	done
+done
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip1.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip2.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd	
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip3.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip4.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd	
+
+cmd="ssh ${user}@storesfm3ou7qrpiuisshpublicip5.westeurope.cloudapp.azure.com pkill -2 dstat  "
+echo $cmd
+$cmd
