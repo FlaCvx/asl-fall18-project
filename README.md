@@ -1,4 +1,4 @@
-d Systems Lab (ETH course)
+Advanced Systems Lab (ETH course)
 ===========
 The aim of the project is to build and evaluate
 the performance of complex computer and software
